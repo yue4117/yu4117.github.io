@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>        
+        </div>
+</div>
+
+<!-- Main content -->
+<div class="container-fluid" style="margin-right: 200px; padding-top: 30px;">
+    <div class="row">
+        <!-- Gallery -->
+        <div class="col-md-8 mb-4">
+            < img src=""C:\Users\YU\OneDrive - University of Idaho\Pictures\university-of-idaho-central-credit-union-arena-opsis-architecture_2.jpg"" class="img-fluid" data-toggle="modal" data-target="#imageModal">
+        </div>
+        <div class="col-md-4 mb-4">
+            < img src=""C:\Users\YU\OneDrive - University of Idaho\Pictures\university-of-idaho-central-credit-union-arena-opsis-architecture_5.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal">
+        </div>
+        <div class="col-md-4 mb-4">
+            < img src=""C:\Users\YU\OneDrive - University of Idaho\Pictures\university-of-idaho-central-credit-union-arena-opsis-architecture_8.jpg" class="img-fluid" data-toggle="modal" data-target="#imageModal">
+     </div>
+        <div class="col-md-8 mb-4">
+            < img src=""C:\Users\YU\OneDrive - University of Idaho\Pictures\university-of-idaho-central-credit-union-arena-opsis-architecture_10.jpg"" class="img-fluid" data-toggle="modal" data-target="#imageModal">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    < img src="" id="modalImage" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div id="contact" class="container mt-5">
+    <h2 class="text-center">Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Set clicked image to modal
+    $('.gallery img').on('click', function() {
+        $('#modalImage').attr('src', $(this).attr('src'));
+    });
+</script>
+
+</body>
+</html>
